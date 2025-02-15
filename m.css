@@ -1,0 +1,343 @@
+body{
+  font-family: "Montserrat",sans-serif;
+  margin:0;
+  padding:0;
+  background-color: black;
+  color: whitesmoke;
+  overflow: hidden;
+}
+.main {
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    background-color:black;
+    width:300px;
+    border-radius:1rem ;  /*16px */
+    margin-right: 0.2rem;
+}
+.main_content {
+    background-color: #121212;
+    flex:1;
+    border-radius:1rem ;  /*16px */
+    overflow:auto;
+    /* padding:0.5rem; */
+}
+
+.music_player {
+    background-color:black;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height: 72px;
+    justify-content:space-between;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    border-radius:1rem ;
+    padding: 0.5rem 0.75rem;
+    margin-left: 0.5rem; 
+    margin-right: 0.2rem; 
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding-right: 0.5rem 0.7rem;
+    
+
+}
+.nav-option i{
+      font-size: 1.25rem;
+      
+}
+.nav-option a{
+    font-size: 1.25rem;
+    margin-left: 0.5rem;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.lab-option img{
+    height:1.25rem;
+    width:1.25rem;
+   
+}
+.lab-option a{
+    margin-left: 0.4rem;
+    font-size: 1.25rem;
+}
+
+.library{
+    background-color:#121212;
+    border-radius:1rem ;
+    height:100%;
+    align-items: center;
+    margin-right:0.2rem;
+    margin-top:0.5rem;
+    margin-left:0.5rem;
+    padding: 0.5rem 0.5rem;
+   
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.7;
+}
+.icons{
+    display: flex;
+    font-size: 1.25rem;
+    opacity: 0.7;
+    
+}
+.options:hover{
+    opacity: 1;
+}
+#plus{
+    padding-right: 0.4rem;
+}
+.icons:hover{
+    opacity: 1;
+}
+.box{
+    height:9rem;
+    background-color:#232323;
+    /* background-color: grey; */
+    margin:0.5rem 0 0.5rem 0;
+    padding: 1rem ;
+    border-radius:1rem ;
+}
+.box-p1{
+    font-size:0.85rem;
+    font-weight: 1500px;
+}
+.box-p2{
+    font-size:0.7rem;
+    opacity: 0.7;
+    width:fit-content;
+}
+.badge{
+  border:none;
+  border-radius: 100px;
+  color:black;
+  padding:0.25rem 1rem;
+  font-weight: 500px;
+  margin:0.5rem;
+  height:2rem;
+  width:fit-content;
+}
+.dark-badge{
+    background-color: black;
+    color: white;
+}
+.sticky-nav{
+    position:sticky;
+    top:0px;
+    background-color: #121212;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 0 1rem 0;
+    z-index: 10;
+}
+.sticky-nav-icons{
+   margin-left:0.75rem;
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+}
+.nav-item{
+    margin-right: 1.5rem;
+}
+@media(max-width:1000px){
+    .hide{
+        display:none;
+    }
+}
+h2{
+    margin-left:1rem;
+}
+.card{
+    background-color: #232323;
+    width:150px;
+    border-radius: 0.4rem;
+    padding:0.7rem;
+    height: 240px;
+    margin:1rem;
+    align-items: center;
+
+}
+.cards-container{
+    display:flex;
+    flex-wrap:wrap;
+    padding-bottom:0.5rem;
+    
+   
+}
+.card-img{
+    width:100%;
+    border-radius: 0.3rem;
+
+}
+.card-title{
+    font-weight: 900px;
+    color: white;
+    padding-top:1rem;
+}
+.card-info{
+    color: white;
+    font-size:0.65rem;
+    opacity:o.5rem;
+    padding:0.2rem;
+}
+.footer{
+    height: 300px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    border-top: 1px solid white;
+    opacity:0.4rem;
+    width:90%;
+    height:50%;
+}
+.music_player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album{
+    width:25%;
+   
+}
+.player{
+    width:50%;
+}
+.controls{
+    width:25%;
+}
+.player-control-icon{
+    height:1rem;
+    margin-left:0.8rem;
+    opacity: 0.7;
+    margin-top:0.1rem;
+}
+.player-control-icon:hover{
+    opacity:1;
+}
+.player-controls{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.playback-bar{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.progress-bar{
+    width:70%;
+    /* appearance:none; */
+    cursor: pointer;  /*quirksmode.org */
+   
+   
+}
+/* .progress-bar::-webkit-slider-runnable-track{     
+    background-color: #ddd;
+    border-radius: 50px;
+    height: 0.2rem;
+}  */
+   
+/* .progress-bar::-webkit-slider-thumb{
+    height:0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    background-color: #1bd760;
+    appearance: none;
+    margin-top: 0.1rem; 
+} */
+.album-picture{
+    margin:0.5rem;
+    border-radius: 0.3rem;
+    height:3.4rem ;
+    align-items: center;
+    
+}
+.album{
+    display:flex;
+    align-items: center;
+   
+}
+.song-details{
+    display:block;
+   
+    
+}
+.singer{
+    font-size: 0.6rem;
+    margin-bottom: 1rem;
+   
+}
+.song-name{
+    margin-top: 1rem;
+    margin-bottom: auto;
+}
+
+.album-icon2{
+    height:33px ;
+    margin-left: 0.2rem;
+    
+}
+.album-icon{
+    align-items: center;
+    display: flex;
+    margin-left: 1rem;
+    justify-content: space-between;
+}
+.controls{
+    display: flex;
+    height:2rem ;
+    margin-left: 5rem;
+    justify-content: end;
+}
+.icon3{
+    height:1.2rem;
+    margin-top: 0.4rem;
+    opacity:0.6;
+    
+}
+.icon4{
+    height:0.9rem;
+    margin-top: 0.6rem;
+    margin-left: 3px;
+    opacity:0.6;
+}
+.slider{
+   width:70px;
+   margin-right: 50px;
+   margin-top:7px;
+}
+@media(max-width:500px){
+    .controls{
+      display: none;
+
+    }
+}
+@media(min-width:500px){
+    .{
+      display: flex;
+
+    }
+}
